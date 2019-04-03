@@ -1,12 +1,7 @@
 ﻿namespace Skill
 {
-    public class ActiveSkill
+    public abstract class ActiveSkill<T> : PassiveSkill<T>
     {
-        public string names;
-        public string discription;
-        public SkillType skillType;
-        public DamageType damageType;
-
         public float cost;
         public float recast;
     }

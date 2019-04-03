@@ -1,17 +1,20 @@
 ﻿namespace Skill
 {
     using System;
-    using UnityEngine;
 
     public class RangerClassSkill
     {
-        public SkillPassiveRangerFocus passive = new SkillPassiveRangerFocus();
+        public SkillPassiveRangerFocus SkillPassiveFocus = new SkillPassiveRangerFocus();
+        public SkillActiveRangerFrostShot SkillActiveFrostShot = new SkillActiveRangerFrostShot();
 
         public RangerClassSkill(float atk,float spd)
         {
+            //------------------------------ Passive Focus --------------------------------//
             Tuple<float, float> _key = new Tuple<float, float>(atk, spd);
-            passive.atk = passive.CalculateParameterFromSkill(_key).Item1;
-            passive.spd = passive.CalculateParameterFromSkill(_key).Item2;
+            SkillPassiveFocus.atk = SkillPassiveFocus.CalculateParameterFromSkill(_key).Item1;
+            SkillPassiveFocus.spd = SkillPassiveFocus.CalculateParameterFromSkill(_key).Item2;
+
+            //------------------------------ Active FrostShot --------------------------------//
         }
     }
 }

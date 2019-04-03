@@ -10,7 +10,11 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("ATK: "+Ranger.passive.atk);
-        Debug.Log("SPD: "+Ranger.passive.spd);
+        Debug.Log("ATK: "+Ranger.SkillPassiveFocus.atk);
+        Debug.Log("SPD: "+Ranger.SkillPassiveFocus.spd);
+        Debug.Log("Name: "+Ranger.SkillPassiveFocus.names);
+        Debug.Log("Discription: "+Ranger.SkillPassiveFocus.discription);
+        Debug.Log("SkillType: "+Ranger.SkillPassiveFocus.skillType);
+        Debug.Log("DamageType: "+Ranger.SkillPassiveFocus.damageType);
     }
 }

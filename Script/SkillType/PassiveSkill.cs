@@ -1,6 +1,5 @@
 ﻿namespace Skill
 {
-    using UnityEngine;
     public enum SkillType { self, selectTarget, area, projectile }
     public enum DamageType { patk, matk, heal, buff, None }
 
